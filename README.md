@@ -50,10 +50,10 @@ This project is purely front-end, without any frameworks or libraries — focuse
 
 Throughout the development of this portfolio project, I gained valuable hands-on experience in several key areas:
 
-1. Responsive Web Design: Learned how to structure and style layouts that adapt across various screen sizes using CSS Grid, Flexbox, and media queries.
-2. CSS Variables: Utilized :root custom properties to maintain a consistent color scheme and font weights, improving maintainability and scalability.
-3. Typography and Fonts: Integrated Google Fonts (Epilogue and Jost) and practiced applying appropriate font weights and spacing for better readability and aesthetics.
-4. Component-Based Layouts: Broke down sections (Hero, Skills, Work, Testimonials, Contact) into clear, reusable patterns, improving design clarity and development speed.
-5. Clean Code Practices: Focused on organizing styles logically, reducing redundancy, and following modern best practices for naming and structure.
-6. Mobile-First Thinking: Designed with responsiveness in mind from the start, ensuring the site looks great on both desktop and mobile devices.
-7. User Interface (UI) Design: Improved my understanding of spacing, visual hierarchy, and layout alignment to create a visually pleasing and accessible experience.
+1. **Responsive Web Design:** Learned how to structure and style layouts that adapt across various screen sizes using CSS Grid, Flexbox, and media queries.
+2. **CSS Variables:** Utilized :root custom properties to maintain a consistent color scheme and font weights, improving maintainability and scalability.
+3. **Typography and Fonts:** Integrated Google Fonts (Epilogue and Jost) and practiced applying appropriate font weights and spacing for better readability and aesthetics.
+4. **Component-Based Layouts:** Broke down sections (Hero, Skills, Work, Testimonials, Contact) into clear, reusable patterns, improving design clarity and development speed.
+5. **Clean Code Practices:** Focused on organizing styles logically, reducing redundancy, and following modern best practices for naming and structure.
+6. **Mobile-First Thinking:** Designed with responsiveness in mind from the start, ensuring the site looks great on both desktop and mobile devices.
+7. **User Interface (UI) Design:** Improved my understanding of spacing, visual hierarchy, and layout alignment to create a visually pleasing and accessible experience.
