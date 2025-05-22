@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Color */
+    --black: #2D2D2D;
+    --white: #FFFFFF;
+    --green: #009379;
+    --red: #FF6250;
+    --pink: #F3AFA8;
+    --grey: #F3F3F3;
+    --yellow: #F7D684;
+
+    /* Font Weights */
+    --font-thin: 100;
+    --font-extralight: 200;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+}
+body {
+    min-height: 100vh;
+    font-family: "Epilogue", sans-serif;
+    overflow-x: hidden;
+    background: var(--white);
+    scroll-behavior: smooth;
+}
+/* Global */
+.btn {
+    width: 211px;
+    height: 78px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: var(--font-semibold);
+    border: none;
+    outline: none;
+}
+    section {
+        padding: 24px 42px;
+        margin-top: 30px;
+    }
+
+    /* Header Section */
+    header {
+        width: 100%;
+        height: 78px;
+        padding: 24px 42px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo {
+        font-size: 20px;
+        font-weight: var(--font-semibold);
+    }
+    .hamburger {
+        display: none;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--black);
+        z-index: 1001;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul li {
+        list-style: none;
+        padding-right: 20px;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: var(--black);
+        font-size: 17px;
+        font-weight: var(--font-regular);
+    }
+    /* Hero Section */
+    .hero-section {
+        width: 100%;
+        height: auto;
+    }
+    .hero-section .header-section {
+        width: 100%;
+        height: 444px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 68px;
+    }
+    .hero-section .header-section .left-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: 620px;
+        height: 328px;
+    }
+    .hero-section .header-section .left-content h2 {
+        font-size: 20px;
+        font-weight: var(--font-semibold);
+        color: var(--black);
+    }
+    .hero-section .header-section .left-content h1 {
+        font-size: 68px;
+        font-weight: var(--font-semibold);
+        color: var(--black);
+    }
+    .hero-section .header-section .left-content p {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: var(--font-regular);
+        color: var(--black);
+    }
+    .hero-section .header-section .right-content {
+        width: 480px;
+        height: 360px;
+    }
+    .hero-section .logo-container {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 68px 42px;
+    }
+    /* skills section */
+    .skills {
+        width: 100%;
+        height: 513px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding: 24px 42px;
+    }
+    .skill-container {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 42px;
+        padding: 42px 64px;
+    }
+    .skill-container h1 {
+        font-size: 27px;
+        font-weight: var(--font-semibold);
+    }
+    .skill-container p {
+        font-size: 17px;
+        font-weight: var(--font-regular);
+        text-align: center;
+        line-height: 27px;
+    }
+    /* latest work section */
+    .work {
+        width: 100%;
+        padding: 24px 42px;
+    }
+
+    .title-work {
+        text-align: center;
+        font-size: 32px;
+        font-weight: var(--font-semibold);
+        margin-bottom: 2rem;
+    }
+
+    .work-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 24px;
+    }
+    .work-container h1 {
+        font-size: 20px;
+        font-weight: var(--font-semibold);
+    }
+    .work-container p {
+        font-size: 17px;
+        font-weight: var(--font-regular);
+        color: var(--black);
+    }
+
+    /* testimonial section */
+    .testimonial {
+        width: 100%;
+        padding: 24px 42px;
+    }
+    .title-testimonial {
+        text-align: center;
+        font-size: 32px;
+        font-weight: var(--font-semibold);
+        margin-bottom: 2rem;
+    }
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        padding: 42px;
+        gap: 68px;
+        background: var(--grey);
+    }
+    .testimonial-container p {
+        font-size: 20px;
+        font-weight: var(--font-semibold);
+        color: var(--black);
+        line-height: 30px;
+    }
+    .testimonial-container .client {
+        display: flex;
+        
+        gap: 16px;
+    }
+    .testimonial-container .client .client-img {
+        width: 50px;
+        height: 50px;
+    }
+    .testimonial-container .client .client-details {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+    .testimonial-container .client .client-details h1 {
+        font-size: 20px;
+        font-weight: var(--font-semibold);
+    }
+
+    .testimonial-container .client .client-details p {
+        font-size: 17px;
+        font-weight: var(--font-regular);
+    }
+
+    /* contact section */
+    .contact {
+        width: 100%;
+        height: 426px;
+        padding: 24px 42px;
+    }
+    .contact h1 {
+        font-size: 32px;
+        font-weight: var(--font-semibold);
+        color: var(--black);
+    }
+    .contact .contact-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 142px;
+        margin-top: 30px;
+    }
+    .contact .contact-content .contact-info {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+    .contact .contact-content .contact-info p {
+        line-height: 27px;
+        font-size: 17px;
+        font-weight: var(--font-regular);
+    }
+    .contact .contact-content .contact-info .social-links {
+        display: flex;
+        gap: 24px;
+    }
+    .contact .contact-content .form {
+        width: 50%;
+        height: auto;
+    }
+    .contact .contact-content .form form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .contact .contact-content .form form input {
+        width: 100%;
+        height: 59px;
+        background: var(--grey);
+        border: none;
+        outline: none;
+        font-size: 17px;
+        font-weight: var(--font-regular);
+        padding: 24px 16px;
+        color: var(--black);
+    }
+
+
+/* responsive */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-section .header-section {
+        flex-direction: column;
+        height: auto;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .hero-section .header-section .left-content,
+    .hero-section .header-section .right-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the button horizontally */
+    text-align: center;  /* Optional, for centering the text */
+    }
+    .hero-section .header-section .left-content .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .logo-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .skills,
+    .work-grid,
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        gap: -20px;
+    }
+    .work {
+        margin-top: 500px;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .contact .contact-content .contact-info,
+    .contact .contact-content .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide nav by default */
+    nav {
+        display: none;
+        position: absolute;
+        top: 78px; /* height of header */
+        left: 0;
+        width: 100%;
+        background-color: var(--grey);
+        z-index: 1000;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    /* Show nav when active */
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .header-section h1 {
+        font-size: 48px;
+    }
+
+    .skills,
+    .work-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-container,
+    .work-container,
+    .testimonial-container {
+        padding: 24px;
+    }
+
+    .btn {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    .contact h1 {
+        text-align: center;
+    }
+
+    .contact .contact-content {
+        padding: 0 1rem;
+    }
+
+    section,
+    .contact,
+    .skills,
+    .testimonial,
+    .work {
+        margin-top: 30px;
+        padding: 24px 20px;
+    }
+    .work {
+        margin-top: 600px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .hero-section .header-section .left-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-section .header-section .left-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-section .header-section .left-content p,
+    .work-container p,
+    .skill-container p,
+    .testimonial-container p,
+    .contact .contact-content .contact-info p {
+        font-size: 15px;
+    }
+
+    .title-work,
+    .title-testimonial,
+    .contact h1 {
+        font-size: 24px;
+    }
+
+    .contact .contact-content {
+        gap: 32px;
+    }
+}
