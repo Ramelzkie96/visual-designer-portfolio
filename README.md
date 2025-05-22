@@ -31,8 +31,8 @@ The design and code are simple, responsive, and visually driven — perfect for 
 
 ### Links
 
-- Solution URL: [View Code](https://github.com/Ramelzkie96/QR-Code-Component.git)
-- Live Site URL: [Live Site](https://qr-components-code.netlify.app/)
+- Solution URL: [View Code](https://github.com/Ramelzkie96/visual-designer-portfolio.git)
+- Live Site URL: [Live Site](https://virtual-designer.netlify.app/)
 
 ## My process
 
